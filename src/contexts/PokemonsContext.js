@@ -10,9 +10,9 @@ export function PokemonsProvider({ children }) {
     const { token } = useContext(UserContext);
     const [pokemons, setPokemons] = useState(null);
 
-    useEffect(() => {
-        updatePokemons();
-    }, [token?.token]);
+    useEffect(
+        updatePokemons
+    , [token?.token]);
 
     function updatePokemons() {
         axios.get(`${process.env.REACT_APP_API_BASE_URL}/pokemons`, {

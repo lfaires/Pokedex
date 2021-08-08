@@ -6,7 +6,7 @@ export default function PokemonButton(props) {
     const { pokemon } = props;
     const id = pokemon.id;
     const imgSrc = pokemon.image;
-
+    console.log(pokemon)
     return (
         <Link to={`/pokemon/${id}`} className="pokemon-button">
             <WhiteBox>

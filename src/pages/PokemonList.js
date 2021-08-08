@@ -9,7 +9,7 @@ import PokemonsContext from "../contexts/PokemonsContext";
 
 export default function PokemonListPage() {
     const { pokemons } = useContext(PokemonsContext);
-
+ 
     return (
         <>
             <Header />
